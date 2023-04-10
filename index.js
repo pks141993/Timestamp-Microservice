@@ -42,8 +42,7 @@ app.get("/api/:date?", function (req, res) {
     });
   } else {
     res.json({
-      unix: "Invalid Input",
-      utc: "Invalid Input",
+      error: "Invalid Date"
     });
   }
 });
